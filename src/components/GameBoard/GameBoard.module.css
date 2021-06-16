@@ -22,3 +22,13 @@
 .disabled {
   pointer-events: none;
 }
+/* 
+.X {
+  background-color: lightcoral !important;
+  pointer-events: none;
+}
+
+.O {
+  background-color: lightseagreen !important;
+  pointer-events: none;
+} */
