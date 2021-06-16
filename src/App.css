@@ -25,6 +25,16 @@ h6 {
 
 .container {
   display: grid;
-  grid-template-rows: 95% auto;
+  grid-template-rows: 90% auto;
   place-items: center;
+}
+
+.X {
+  background-color: lightcoral !important;
+  pointer-events: none;
+}
+
+.O {
+  background-color: lightseagreen !important;
+  pointer-events: none;
 }
