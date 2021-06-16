@@ -5,9 +5,9 @@ import {useContext} from 'react';
 const GameScore = () => {
     const {currentPlayer } = useContext(GameData);
     return (
-        <div>
-            <h1 style={{ color: currentPlayer === "X" ? 'lightcoral' : 'lightseagreen' }}>Current Player: {currentPlayer}</h1>
-        </div>
+        <>
+            <div className={styles.gameScore} style={{ color: currentPlayer === "X" ? 'lightcoral' : 'lightseagreen' }}>Current Player: {currentPlayer}</div>
+        </>
     )
 }
 

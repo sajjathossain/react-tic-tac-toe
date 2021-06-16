@@ -16,11 +16,10 @@ const GameBoard = () => {
     const getData = async () => {
       setCubeData(boardValues)
       loading.setIsLoading(false)
-      console.log(boardValues["c0"])
     }
 
     getData()
-  }, [boardValues, currentPlayer])
+  }, [boardValues, currentPlayer, loading])
   
   return (
       loading.isLoading ? <h2>Loading...</h2> :

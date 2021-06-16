@@ -67,7 +67,7 @@ export const DataProvider = ({ children }) => {
         }
 
         // ! 3 4 5
-        if(boardValues["c3"].player !== "" && boardValues["c4"].player !== "" && boardValues["c6"].player !== ""){
+        if(boardValues["c3"].player !== "" && boardValues["c4"].player !== "" && boardValues["c5"].player !== ""){
             if(boardValues["c3"].player === boardValues["c4"].player && boardValues["c4"].player === boardValues["c5"].player){
                 return true
             }
@@ -120,6 +120,7 @@ export const DataProvider = ({ children }) => {
     }
 
     const assignValues = (event) => {
+        setBoardValues(boardValues)
         setCurrentPlayer(currentPlayer === "X" ? "O" : "X")
         const cubeIndex = event.target.id
         boardValues[cubeIndex].player = currentPlayer
@@ -128,9 +129,6 @@ export const DataProvider = ({ children }) => {
         if(didWin){
             setWinnerFound(true)
         }
-
-        console.log(event.target.className)
-        console.log(cubeIndex, currentPlayer, didWin)
     }
 
     const values = {

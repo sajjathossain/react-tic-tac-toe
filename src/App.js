@@ -8,11 +8,11 @@ function App() {
   return (
     <DataProvider>
       <div className="App">
-        <div className="game-name">Tic Tac Toe</div>
         <div className="container">
-          <Components.GameBoard />
           <Components.GameScore />
+          <Components.GameBoard />
         </div>
+        <div className="game-name">Tic Tac Toe</div>
       </div>
     </DataProvider>
   );
