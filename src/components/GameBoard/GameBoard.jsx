@@ -38,7 +38,7 @@ const GameBoard = () => {
 
         <div className={styles.winningCard} style={{ color: currentPlayer === "X" ? 'lightseagreen' : 'lightcoral', zIndex: winnerFound || count === 9 ? 2 : -1 }}>
             <div>
-              { count === 9 ? "The Game Was A Tie!" : `The Winner is ${currentPlayer === "X" ? "O" : "X"}!`}
+              { count === 9 && !winnerFound ? "The Game Was A Tie!" : `The Winner is ${currentPlayer === "X" ? "O" : "X"}!`}
             </div>
             <button className={styles.resetButton} onClick={() => { resetGame() }}>Reset</button>
         </div>
