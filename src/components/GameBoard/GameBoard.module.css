@@ -56,7 +56,33 @@
 }
 
 .resetButton:active {
-  box-shadow: 3px 4px 20px -6px rgba(0, 0, 0, 0.78) inset;
-  -webkit-box-shadow: 3px 4px 20px -6px rgba(0, 0, 0, 0.78) inset;
-  -moz-box-shadow: 3px 4px 20px -6px rgba(0, 0, 0, 0.78) inset;
+  box-shadow: 3px 4px 20px -6px rgba(0, 0, 0, 0.25) inset;
+  -webkit-box-shadow: 3px 4px 20px -6px rgba(0, 0, 0, 0.25) inset;
+  -moz-box-shadow: 3px 4px 20px -6px rgba(0, 0, 0, 0.25) inset;
+}
+
+@media (max-width: 1200px) {
+  .winningCard {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .winningCard {
+    font-size: 2rem;
+  }
+
+  .gameCube {
+    height: 75%;
+    width: 75%;
+    font-size: 3rem;
+  }
+}
+
+@media (max-height: 850px) {
+  .resetButton {
+    height: 25%;
+    width: 50%;
+    font-size: 1.5rem;
+  }
 }

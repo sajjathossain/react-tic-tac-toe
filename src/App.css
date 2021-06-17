@@ -14,6 +14,7 @@ h6 {
   display: grid;
   grid-template-rows: 1fr auto;
   padding: 2vh 3vw;
+  background-color: #eee;
 }
 
 .game-name {
@@ -38,4 +39,10 @@ h6 {
 .O {
   background-color: lightseagreen !important;
   pointer-events: none;
+}
+
+@media (max-height: 550px) {
+  .game-name {
+    visibility: hidden;
+  }
 }
