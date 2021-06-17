@@ -41,8 +41,16 @@ h6 {
   pointer-events: none;
 }
 
-@media (max-height: 550px) {
+@media (max-height: 350px) {
   .game-name {
     visibility: hidden;
+    height: 2vh;
+  }
+}
+
+@media (max-width: 270px) {
+  .game-name {
+    visibility: hidden;
+    height: 2vh;
   }
 }

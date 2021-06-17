@@ -79,6 +79,13 @@
   }
 }
 
+@media (max-width: 640px) {
+  .resetButton {
+    height: 25%;
+    width: 30%;
+    font-size: 1.5rem;
+  }
+}
 @media (max-height: 850px) {
   .resetButton {
     height: 25%;
